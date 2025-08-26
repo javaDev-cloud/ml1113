@@ -1,0 +1,521 @@
+2025-08-26 10:23:17.021  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] com.sba.bookmarks.BookmarksApplication   : Starting BookmarksApplication using Java 21.0.2 with PID 30244 (C:\Users\munis\Downloads\bookmarks2\target\classes started by munis in C:\Users\munis\Downloads\bookmarks2)
+2025-08-26 10:23:17.034  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] com.sba.bookmarks.BookmarksApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-26 10:23:17.177  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-26 10:23:17.178  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-26 10:23:19.553  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-26 10:23:19.748  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 164 ms. Found 1 JPA repository interface.
+2025-08-26 10:23:21.606  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8010 (http)
+2025-08-26 10:23:21.641  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-26 10:23:21.642  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-08-26 10:23:21.767  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-08-26 10:23:21.768  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4588 ms
+2025-08-26 10:23:22.979  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-26 10:23:23.641  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16c6d458
+2025-08-26 10:23:23.645  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-26 10:23:23.750  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:25432/postgres (PostgreSQL 14.18)
+2025-08-26 10:23:24.011  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 6 migrations (execution time 00:00.121s)
+2025-08-26 10:23:24.066  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 6
+2025-08-26 10:23:24.077  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2025-08-26 10:23:24.409  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-26 10:23:24.614  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-08-26 10:23:24.751  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-26 10:23:25.514  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-26 10:23:25.664  WARN 30244 [UserId:Guest] [Context:] --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-26 10:23:25.701  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.18
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-26 10:23:27.286  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-26 10:23:27.372  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-26 10:23:28.145  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-26 10:23:30.812  WARN 30244 [UserId:Guest] [Context:] --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-26 10:23:32.720  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-26 10:23:32.751  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-26 10:23:33.041  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8010 (http) with context path '/api'
+2025-08-26 10:23:33.066  INFO 30244 [UserId:Guest] [Context:] --- [restartedMain] com.sba.bookmarks.BookmarksApplication   : Started BookmarksApplication in 17.287 seconds (process running for 18.525)
+2025-08-26 10:52:47.245  INFO 30244 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-26 10:52:47.265  INFO 30244 [UserId:Guest] [Context:] --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-26 10:52:47.272  INFO 30244 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-26 10:52:47.278  INFO 30244 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-26 10:52:47.282  INFO 30244 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-26 11:03:22.496  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] com.sba.bookmarks.BookmarksApplication   : Starting BookmarksApplication using Java 21.0.2 with PID 9288 (C:\Users\munis\Downloads\bookmarks2\target\classes started by munis in C:\Users\munis\Downloads\bookmarks2)
+2025-08-26 11:03:22.496  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] com.sba.bookmarks.BookmarksApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-26 11:03:22.539  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-26 11:03:22.539  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-26 11:03:23.553  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-26 11:03:23.617  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interface.
+2025-08-26 11:03:24.248  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8010 (http)
+2025-08-26 11:03:24.263  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-26 11:03:24.265  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-08-26 11:03:24.314  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-08-26 11:03:24.315  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1776 ms
+2025-08-26 11:03:24.836  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-26 11:03:24.982  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@bc2da4b
+2025-08-26 11:03:24.983  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-26 11:03:25.010  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:25432/postgres (PostgreSQL 14.18)
+2025-08-26 11:03:25.073  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 6 migrations (execution time 00:00.037s)
+2025-08-26 11:03:25.124  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 6
+2025-08-26 11:03:25.129  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2025-08-26 11:03:25.260  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-26 11:03:25.339  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-08-26 11:03:25.379  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-26 11:03:25.594  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-26 11:03:25.631  WARN 9288 [UserId:Guest] [Context:] --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-26 11:03:25.644  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.18
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-26 11:03:26.170  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-26 11:03:26.217  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-26 11:03:26.513  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-26 11:03:27.167  WARN 9288 [UserId:Guest] [Context:] --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-26 11:03:27.672  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-26 11:03:27.681  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-26 11:03:27.760  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8010 (http) with context path '/api'
+2025-08-26 11:03:27.770  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] com.sba.bookmarks.BookmarksApplication   : Started BookmarksApplication in 5.784 seconds (process running for 6.21)
+2025-08-26 11:03:27.868  INFO 9288 [UserId:Guest] [Context:] --- [http-nio-8010-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-26 11:03:27.868  INFO 9288 [UserId:Guest] [Context:] --- [http-nio-8010-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-26 11:03:27.869  INFO 9288 [UserId:Guest] [Context:] --- [http-nio-8010-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-26 11:03:27.913  INFO 9288 [UserId:Guest] [Context:] --- [http-nio-8010-exec-1] c.s.b.controllers.BookmarkController     : Logger page 1
+2025-08-26 11:05:45.021  INFO 9288 [UserId:Guest] [Context:] --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 9 class path changes (0 additions, 8 deletions, 1 modification)
+2025-08-26 11:05:45.024  INFO 9288 [UserId:Guest] [Context:] --- [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-26 11:05:45.039  INFO 9288 [UserId:Guest] [Context:] --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-26 11:05:45.043  INFO 9288 [UserId:Guest] [Context:] --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-26 11:05:45.046  INFO 9288 [UserId:Guest] [Context:] --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-26 11:05:45.052  INFO 9288 [UserId:Guest] [Context:] --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-26 11:05:45.163  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] com.sba.bookmarks.BookmarksApplication   : Starting BookmarksApplication using Java 21.0.2 with PID 9288 (C:\Users\munis\Downloads\bookmarks2\target\classes started by munis in C:\Users\munis\Downloads\bookmarks2)
+2025-08-26 11:05:45.163  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] com.sba.bookmarks.BookmarksApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-26 11:05:45.513  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-26 11:05:45.515  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-08-26 11:05:45.610  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8010 (http)
+2025-08-26 11:05:45.611  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-26 11:05:45.611  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-08-26 11:05:45.638  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-08-26 11:05:45.639  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 474 ms
+2025-08-26 11:05:45.691  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-08-26 11:05:45.710  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@5a24b845
+2025-08-26 11:05:45.710  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-08-26 11:05:45.713  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:25432/postgres (PostgreSQL 14.18)
+2025-08-26 11:05:45.751  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 6 migrations (execution time 00:00.016s)
+2025-08-26 11:05:45.784  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 6
+2025-08-26 11:05:45.786  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2025-08-26 11:05:45.804  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-26 11:05:45.805  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-26 11:05:45.812  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-26 11:05:45.819  WARN 9288 [UserId:Guest] [Context:] --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-26 11:05:45.822  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 14.18
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-26 11:05:45.844  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-26 11:05:45.844  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-26 11:05:45.864  WARN 9288 [UserId:Guest] [Context:] --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-26 11:05:46.011  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-26 11:05:46.013  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-26 11:05:46.027  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8010 (http) with context path '/api'
+2025-08-26 11:05:46.031  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] com.sba.bookmarks.BookmarksApplication   : Started BookmarksApplication in 0.925 seconds (process running for 144.484)
+2025-08-26 11:05:46.033  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-26 11:05:47.456  INFO 9288 [UserId:Guest] [Context:] --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 8 class path changes (8 additions, 0 deletions, 0 modifications)
+2025-08-26 11:05:47.457  INFO 9288 [UserId:Guest] [Context:] --- [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-26 11:05:47.468  INFO 9288 [UserId:Guest] [Context:] --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-26 11:05:47.470  INFO 9288 [UserId:Guest] [Context:] --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-26 11:05:47.471  INFO 9288 [UserId:Guest] [Context:] --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-08-26 11:05:47.474  INFO 9288 [UserId:Guest] [Context:] --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-08-26 11:05:47.604  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] com.sba.bookmarks.BookmarksApplication   : Starting BookmarksApplication using Java 21.0.2 with PID 9288 (C:\Users\munis\Downloads\bookmarks2\target\classes started by munis in C:\Users\munis\Downloads\bookmarks2)
+2025-08-26 11:05:47.604  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] com.sba.bookmarks.BookmarksApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-26 11:05:48.015  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-26 11:05:48.036  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interface.
+2025-08-26 11:05:48.117  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8010 (http)
+2025-08-26 11:05:48.118  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-26 11:05:48.119  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-08-26 11:05:48.147  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-08-26 11:05:48.147  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 541 ms
+2025-08-26 11:05:48.214  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-08-26 11:05:48.233  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@46b06e1
+2025-08-26 11:05:48.233  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-08-26 11:05:48.235  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:25432/postgres (PostgreSQL 14.18)
+2025-08-26 11:05:48.275  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 6 migrations (execution time 00:00.019s)
+2025-08-26 11:05:48.313  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 6
+2025-08-26 11:05:48.314  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2025-08-26 11:05:48.334  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-26 11:05:48.336  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-26 11:05:48.342  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-26 11:05:48.350  WARN 9288 [UserId:Guest] [Context:] --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-26 11:05:48.354  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 14.18
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-26 11:05:48.388  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-26 11:05:48.405  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-26 11:05:48.476  WARN 9288 [UserId:Guest] [Context:] --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-26 11:05:48.562  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-26 11:05:48.564  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-26 11:05:48.580  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8010 (http) with context path '/api'
+2025-08-26 11:05:48.584  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] com.sba.bookmarks.BookmarksApplication   : Started BookmarksApplication in 1.036 seconds (process running for 147.036)
+2025-08-26 11:05:48.585  INFO 9288 [UserId:Guest] [Context:] --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-26 11:05:50.176  INFO 27512 [UserId:Guest] [Context:] --- [main] c.s.bookmarks.BookmarksApplicationTests  : Starting BookmarksApplicationTests using Java 23.0.2 with PID 27512 (started by munis in C:\Users\munis\Downloads\bookmarks2)
+2025-08-26 11:05:50.180  INFO 27512 [UserId:Guest] [Context:] --- [main] c.s.bookmarks.BookmarksApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-08-26 11:05:51.295  INFO 27512 [UserId:Guest] [Context:] --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-26 11:05:51.369  INFO 27512 [UserId:Guest] [Context:] --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interface.
+2025-08-26 11:05:51.923  INFO 27512 [UserId:Guest] [Context:] --- [main] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+2025-08-26 11:05:51.926  INFO 27512 [UserId:Guest] [Context:] --- [main] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-08-26 11:05:51.981  INFO 27512 [UserId:Guest] [Context:] --- [main] org.testcontainers.DockerClientFactory   : Testcontainers version: 1.21.3
+2025-08-26 11:05:52.228  INFO 27512 [UserId:Guest] [Context:] --- [main] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-08-26 11:05:52.535  INFO 27512 [UserId:Guest] [Context:] --- [main] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2025-08-26 11:05:52.536  INFO 27512 [UserId:Guest] [Context:] --- [main] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2025-08-26 11:05:52.556  INFO 27512 [UserId:Guest] [Context:] --- [main] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 27.3.1
+  API Version: 1.47
+  Operating System: Docker Desktop
+  Total Memory: 15823 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+2025-08-26 11:05:52.581  INFO 27512 [UserId:Guest] [Context:] --- [main] tc.testcontainers/ryuk:0.12.0            : Creating container for image: testcontainers/ryuk:0.12.0
+2025-08-26 11:05:52.842  INFO 27512 [UserId:Guest] [Context:] --- [main] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 is starting: 261dc0e44561b2a6aaa3b4bf25bba9a9a56b583b75c92fe9b9d6f298b75d4c58
+2025-08-26 11:05:53.295  INFO 27512 [UserId:Guest] [Context:] --- [main] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 started in PT0.7143071S
+2025-08-26 11:05:53.305  INFO 27512 [UserId:Guest] [Context:] --- [main] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-08-26 11:05:53.306  INFO 27512 [UserId:Guest] [Context:] --- [main] org.testcontainers.DockerClientFactory   : Checking the system...
+2025-08-26 11:05:53.307  INFO 27512 [UserId:Guest] [Context:] --- [main] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2025-08-26 11:05:53.308  INFO 27512 [UserId:Guest] [Context:] --- [main] tc.postgres:latest                       : Creating container for image: postgres:latest
+2025-08-26 11:05:53.388  INFO 27512 [UserId:Guest] [Context:] --- [main] tc.postgres:latest                       : Container postgres:latest is starting: 5c9dfb8e9c8f8314b0b4ee74c933d8898afb7b2ad526521d837dc6f97548ea94
+2025-08-26 11:05:54.960  INFO 27512 [UserId:Guest] [Context:] --- [main] tc.postgres:latest                       : Container postgres:latest started in PT1.6523572S
+2025-08-26 11:05:54.961  INFO 27512 [UserId:Guest] [Context:] --- [main] tc.postgres:latest                       : Container is started (JDBC URL: jdbc:postgresql://localhost:11343/test?loggerLevel=OFF)
+2025-08-26 11:05:55.547  INFO 27512 [UserId:Guest] [Context:] --- [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:11343/test?loggerLevel=OFF (PostgreSQL 17.6)
+2025-08-26 11:05:55.600  INFO 27512 [UserId:Guest] [Context:] --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2025-08-26 11:05:55.605  INFO 27512 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 6 migrations (execution time 00:00.024s)
+2025-08-26 11:05:55.618  INFO 27512 [UserId:Guest] [Context:] --- [main] org.flywaydb.core.Flyway                 : All configured schemas are empty; baseline operation skipped. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended.
+2025-08-26 11:05:55.625  INFO 27512 [UserId:Guest] [Context:] --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2025-08-26 11:05:55.693  INFO 27512 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2025-08-26 11:05:55.720  INFO 27512 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - create bookmarks table"
+2025-08-26 11:05:55.774  INFO 27512 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - insert sample data"
+2025-08-26 11:05:55.807  INFO 27512 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - create tables"
+2025-08-26 11:05:55.842  INFO 27512 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "4 - insert sample Data"
+2025-08-26 11:05:55.872  INFO 27512 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "5 - update user password"
+2025-08-26 11:05:55.902  INFO 27512 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "6 - update user password"
+2025-08-26 11:05:55.944  INFO 27512 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 6 migrations to schema "public", now at version v6 (execution time 00:00.068s)
+2025-08-26 11:05:56.069  INFO 27512 [UserId:Guest] [Context:] --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-26 11:05:56.162  INFO 27512 [UserId:Guest] [Context:] --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-08-26 11:05:56.207  INFO 27512 [UserId:Guest] [Context:] --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-26 11:05:56.491  INFO 27512 [UserId:Guest] [Context:] --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-26 11:05:56.536  INFO 27512 [UserId:Guest] [Context:] --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-26 11:05:56.566  INFO 27512 [UserId:Guest] [Context:] --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@394950ad
+2025-08-26 11:05:56.569  INFO 27512 [UserId:Guest] [Context:] --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-26 11:05:56.608  WARN 27512 [UserId:Guest] [Context:] --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-26 11:05:56.631  INFO 27512 [UserId:Guest] [Context:] --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-26 11:05:57.371  INFO 27512 [UserId:Guest] [Context:] --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-26 11:05:57.406  INFO 27512 [UserId:Guest] [Context:] --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-26 11:05:57.725  INFO 27512 [UserId:Guest] [Context:] --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-26 11:05:58.620  WARN 27512 [UserId:Guest] [Context:] --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-26 11:05:59.487  INFO 27512 [UserId:Guest] [Context:] --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-26 11:05:59.590  INFO 27512 [UserId:Guest] [Context:] --- [main] c.s.bookmarks.BookmarksApplicationTests  : Started BookmarksApplicationTests in 9.906 seconds (process running for 11.199)
+2025-08-26 11:06:00.176  INFO 27512 [UserId:Guest] [Context:] --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.sba.bookmarks.controllers.BookmarkControllerTest]: BookmarkControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-26 11:06:00.225  INFO 27512 [UserId:Guest] [Context:] --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.sba.bookmarks.BookmarksApplication for test class com.sba.bookmarks.controllers.BookmarkControllerTest
+2025-08-26 11:06:00.283  INFO 27512 [UserId:Guest] [Context:] --- [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-08-26 11:06:00.309  INFO 27512 [UserId:Guest] [Context:] --- [main] c.s.b.c.BookmarkControllerTest           : Starting BookmarkControllerTest using Java 23.0.2 with PID 27512 (started by munis in C:\Users\munis\Downloads\bookmarks2)
+2025-08-26 11:06:00.310  INFO 27512 [UserId:Guest] [Context:] --- [main] c.s.b.c.BookmarkControllerTest           : No active profile set, falling back to 1 default profile: "default"
+2025-08-26 11:06:00.581  INFO 27512 [UserId:Guest] [Context:] --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-26 11:06:00.589  INFO 27512 [UserId:Guest] [Context:] --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2025-08-26 11:06:00.854  INFO 27512 [UserId:Guest] [Context:] --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-08-26 11:06:00.877  INFO 27512 [UserId:Guest] [Context:] --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-26 11:06:00.877  INFO 27512 [UserId:Guest] [Context:] --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-08-26 11:06:00.931  INFO 27512 [UserId:Guest] [Context:] --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-08-26 11:06:00.931  INFO 27512 [UserId:Guest] [Context:] --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 619 ms
+2025-08-26 11:06:01.039  INFO 27512 [UserId:Guest] [Context:] --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-08-26 11:06:01.055  INFO 27512 [UserId:Guest] [Context:] --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@6e46f5c1
+2025-08-26 11:06:01.056  INFO 27512 [UserId:Guest] [Context:] --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-08-26 11:06:01.058  INFO 27512 [UserId:Guest] [Context:] --- [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:25432/postgres (PostgreSQL 14.18)
+2025-08-26 11:06:01.105  INFO 27512 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 6 migrations (execution time 00:00.020s)
+2025-08-26 11:06:01.139  INFO 27512 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 6
+2025-08-26 11:06:01.141  INFO 27512 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2025-08-26 11:06:01.163  INFO 27512 [UserId:Guest] [Context:] --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-26 11:06:01.166  INFO 27512 [UserId:Guest] [Context:] --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-26 11:06:01.184  INFO 27512 [UserId:Guest] [Context:] --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-26 11:06:01.194  WARN 27512 [UserId:Guest] [Context:] --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-26 11:06:01.197  INFO 27512 [UserId:Guest] [Context:] --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 14.18
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-26 11:06:01.223  INFO 27512 [UserId:Guest] [Context:] --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-26 11:06:01.242  INFO 27512 [UserId:Guest] [Context:] --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-26 11:06:01.277  WARN 27512 [UserId:Guest] [Context:] --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-26 11:06:01.448  INFO 27512 [UserId:Guest] [Context:] --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring TestDispatcherServlet ''
+2025-08-26 11:06:01.448  INFO 27512 [UserId:Guest] [Context:] --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-08-26 11:06:01.451  INFO 27512 [UserId:Guest] [Context:] --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-26 11:06:01.456  INFO 27512 [UserId:Guest] [Context:] --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 8 ms
+2025-08-26 11:06:01.654  INFO 27512 [UserId:Guest] [Context:] --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 11368 (http) with context path '/api'
+2025-08-26 11:06:01.660  INFO 27512 [UserId:Guest] [Context:] --- [main] c.s.b.c.BookmarkControllerTest           : Started BookmarkControllerTest in 1.378 seconds (process running for 13.27)
+2025-08-26 11:06:01.960  INFO 27512 [UserId:Guest] [Context:] --- [main] c.s.b.controllers.BookmarkController     : Logger page 1
+2025-08-26 11:06:02.245  INFO 27512 [UserId:Guest] [Context:] --- [main] c.s.b.controllers.BookmarkController     : Logger page 2
+2025-08-26 11:06:02.284  INFO 27512 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-26 11:06:02.287  INFO 27512 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-26 11:06:02.290  INFO 27512 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-26 11:06:02.526  INFO 27512 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-26 11:06:02.556  INFO 27512 [UserId:Guest] [Context:] --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-26 11:06:02.560  INFO 27512 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-26 11:06:02.561  INFO 27512 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-08-26 11:06:02.569  INFO 27512 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-08-26 11:07:12.347  INFO 9288 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-26 11:07:12.370  INFO 9288 [UserId:Guest] [Context:] --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-26 11:07:12.373  INFO 9288 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-26 11:07:12.373  INFO 9288 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-08-26 11:07:12.376  INFO 9288 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-08-26 11:27:50.684  INFO 25280 [UserId:Guest] [Context:] --- [main] c.s.bookmarks.BookmarksApplicationTests  : Starting BookmarksApplicationTests using Java 23.0.2 with PID 25280 (started by munis in C:\Users\munis\Downloads\bookmarks2)
+2025-08-26 11:27:50.685  INFO 25280 [UserId:Guest] [Context:] --- [main] c.s.bookmarks.BookmarksApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-08-26 11:27:51.523  INFO 25280 [UserId:Guest] [Context:] --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-26 11:27:51.569  INFO 25280 [UserId:Guest] [Context:] --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+2025-08-26 11:27:51.960  INFO 25280 [UserId:Guest] [Context:] --- [main] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+2025-08-26 11:27:51.962  INFO 25280 [UserId:Guest] [Context:] --- [main] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-08-26 11:27:52.001  INFO 25280 [UserId:Guest] [Context:] --- [main] org.testcontainers.DockerClientFactory   : Testcontainers version: 1.21.3
+2025-08-26 11:27:52.213  INFO 25280 [UserId:Guest] [Context:] --- [main] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-08-26 11:27:52.456  INFO 25280 [UserId:Guest] [Context:] --- [main] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2025-08-26 11:27:52.458  INFO 25280 [UserId:Guest] [Context:] --- [main] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2025-08-26 11:27:52.474  INFO 25280 [UserId:Guest] [Context:] --- [main] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 27.3.1
+  API Version: 1.47
+  Operating System: Docker Desktop
+  Total Memory: 15823 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+2025-08-26 11:27:52.491  INFO 25280 [UserId:Guest] [Context:] --- [main] tc.testcontainers/ryuk:0.12.0            : Creating container for image: testcontainers/ryuk:0.12.0
+2025-08-26 11:27:52.701  INFO 25280 [UserId:Guest] [Context:] --- [main] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 is starting: 42149755dd793fe544cdd4fbef3e92d7a271d685432783e70b013141a9cc6d5d
+2025-08-26 11:27:53.015  INFO 25280 [UserId:Guest] [Context:] --- [main] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 started in PT0.5242444S
+2025-08-26 11:27:53.022  INFO 25280 [UserId:Guest] [Context:] --- [main] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-08-26 11:27:53.023  INFO 25280 [UserId:Guest] [Context:] --- [main] org.testcontainers.DockerClientFactory   : Checking the system...
+2025-08-26 11:27:53.023  INFO 25280 [UserId:Guest] [Context:] --- [main] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2025-08-26 11:27:53.024  INFO 25280 [UserId:Guest] [Context:] --- [main] tc.postgres:latest                       : Creating container for image: postgres:latest
+2025-08-26 11:27:53.091  INFO 25280 [UserId:Guest] [Context:] --- [main] tc.postgres:latest                       : Container postgres:latest is starting: 7987f42ddb24bd6b009774fcb11dd96ee445a4a325d7e722b4abe907bc559881
+2025-08-26 11:27:54.163  INFO 25280 [UserId:Guest] [Context:] --- [main] tc.postgres:latest                       : Container postgres:latest started in PT1.1386807S
+2025-08-26 11:27:54.164  INFO 25280 [UserId:Guest] [Context:] --- [main] tc.postgres:latest                       : Container is started (JDBC URL: jdbc:postgresql://localhost:39057/test?loggerLevel=OFF)
+2025-08-26 11:27:54.629  INFO 25280 [UserId:Guest] [Context:] --- [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:39057/test?loggerLevel=OFF (PostgreSQL 17.6)
+2025-08-26 11:27:54.663  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2025-08-26 11:27:54.666  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 6 migrations (execution time 00:00.016s)
+2025-08-26 11:27:54.674  INFO 25280 [UserId:Guest] [Context:] --- [main] org.flywaydb.core.Flyway                 : All configured schemas are empty; baseline operation skipped. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended.
+2025-08-26 11:27:54.679  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2025-08-26 11:27:54.735  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2025-08-26 11:27:54.746  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - create bookmarks table"
+2025-08-26 11:27:54.780  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - insert sample data"
+2025-08-26 11:27:54.809  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - create tables"
+2025-08-26 11:27:54.838  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "4 - insert sample Data"
+2025-08-26 11:27:54.861  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "5 - update user password"
+2025-08-26 11:27:54.883  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "6 - update user password"
+2025-08-26 11:27:54.903  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 6 migrations to schema "public", now at version v6 (execution time 00:00.054s)
+2025-08-26 11:27:54.997  INFO 25280 [UserId:Guest] [Context:] --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-26 11:27:55.058  INFO 25280 [UserId:Guest] [Context:] --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-08-26 11:27:55.087  INFO 25280 [UserId:Guest] [Context:] --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-26 11:27:55.325  INFO 25280 [UserId:Guest] [Context:] --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-26 11:27:55.348  INFO 25280 [UserId:Guest] [Context:] --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-26 11:27:55.371  INFO 25280 [UserId:Guest] [Context:] --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@b9c9bf5
+2025-08-26 11:27:55.373  INFO 25280 [UserId:Guest] [Context:] --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-26 11:27:55.398  WARN 25280 [UserId:Guest] [Context:] --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-26 11:27:55.417  INFO 25280 [UserId:Guest] [Context:] --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-26 11:27:55.957  INFO 25280 [UserId:Guest] [Context:] --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-26 11:27:55.986  INFO 25280 [UserId:Guest] [Context:] --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-26 11:27:56.199  INFO 25280 [UserId:Guest] [Context:] --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-26 11:27:56.885  WARN 25280 [UserId:Guest] [Context:] --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-26 11:27:57.709  INFO 25280 [UserId:Guest] [Context:] --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-26 11:27:57.799  INFO 25280 [UserId:Guest] [Context:] --- [main] c.s.bookmarks.BookmarksApplicationTests  : Started BookmarksApplicationTests in 7.482 seconds (process running for 8.392)
+2025-08-26 11:27:58.414  INFO 25280 [UserId:Guest] [Context:] --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.sba.bookmarks.controllers.BookmarkControllerTest]: BookmarkControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-26 11:27:58.463  INFO 25280 [UserId:Guest] [Context:] --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.sba.bookmarks.BookmarksApplication for test class com.sba.bookmarks.controllers.BookmarkControllerTest
+2025-08-26 11:27:58.514  INFO 25280 [UserId:Guest] [Context:] --- [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-08-26 11:27:58.550  INFO 25280 [UserId:Guest] [Context:] --- [main] c.s.b.c.BookmarkControllerTest           : Starting BookmarkControllerTest using Java 23.0.2 with PID 25280 (started by munis in C:\Users\munis\Downloads\bookmarks2)
+2025-08-26 11:27:58.551  INFO 25280 [UserId:Guest] [Context:] --- [main] c.s.b.c.BookmarkControllerTest           : No active profile set, falling back to 1 default profile: "default"
+2025-08-26 11:27:58.918  INFO 25280 [UserId:Guest] [Context:] --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-26 11:27:58.930  INFO 25280 [UserId:Guest] [Context:] --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2025-08-26 11:27:59.202  INFO 25280 [UserId:Guest] [Context:] --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-08-26 11:27:59.218  INFO 25280 [UserId:Guest] [Context:] --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-26 11:27:59.219  INFO 25280 [UserId:Guest] [Context:] --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-08-26 11:27:59.276  INFO 25280 [UserId:Guest] [Context:] --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-08-26 11:27:59.276  INFO 25280 [UserId:Guest] [Context:] --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 723 ms
+2025-08-26 11:27:59.383  INFO 25280 [UserId:Guest] [Context:] --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-08-26 11:27:59.421  INFO 25280 [UserId:Guest] [Context:] --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@5379839c
+2025-08-26 11:27:59.421  INFO 25280 [UserId:Guest] [Context:] --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-08-26 11:27:59.434  INFO 25280 [UserId:Guest] [Context:] --- [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:25432/postgres (PostgreSQL 14.18)
+2025-08-26 11:27:59.484  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2025-08-26 11:27:59.486  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 6 migrations (execution time 00:00.011s)
+2025-08-26 11:27:59.506  INFO 25280 [UserId:Guest] [Context:] --- [main] org.flywaydb.core.Flyway                 : All configured schemas are empty; baseline operation skipped. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended.
+2025-08-26 11:27:59.513  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2025-08-26 11:27:59.578  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2025-08-26 11:27:59.586  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - create bookmarks table"
+2025-08-26 11:27:59.628  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - insert sample data"
+2025-08-26 11:27:59.657  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - create tables"
+2025-08-26 11:27:59.707  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "4 - insert sample Data"
+2025-08-26 11:27:59.740  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "5 - update user password"
+2025-08-26 11:27:59.766  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "6 - update user password"
+2025-08-26 11:27:59.784  INFO 25280 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 6 migrations to schema "public", now at version v6 (execution time 00:00.085s)
+2025-08-26 11:27:59.802  INFO 25280 [UserId:Guest] [Context:] --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-26 11:27:59.805  INFO 25280 [UserId:Guest] [Context:] --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-26 11:27:59.819  INFO 25280 [UserId:Guest] [Context:] --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-26 11:27:59.828  WARN 25280 [UserId:Guest] [Context:] --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-26 11:27:59.833  INFO 25280 [UserId:Guest] [Context:] --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 14.18
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-26 11:27:59.865  INFO 25280 [UserId:Guest] [Context:] --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-26 11:27:59.899  INFO 25280 [UserId:Guest] [Context:] --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-26 11:27:59.937  WARN 25280 [UserId:Guest] [Context:] --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-26 11:28:00.102  INFO 25280 [UserId:Guest] [Context:] --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring TestDispatcherServlet ''
+2025-08-26 11:28:00.103  INFO 25280 [UserId:Guest] [Context:] --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-08-26 11:28:00.105  INFO 25280 [UserId:Guest] [Context:] --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-26 11:28:00.108  INFO 25280 [UserId:Guest] [Context:] --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 5 ms
+2025-08-26 11:28:00.311  INFO 25280 [UserId:Guest] [Context:] --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 39081 (http) with context path '/api'
+2025-08-26 11:28:00.320  INFO 25280 [UserId:Guest] [Context:] --- [main] c.s.b.c.BookmarkControllerTest           : Started BookmarkControllerTest in 1.807 seconds (process running for 10.915)
+2025-08-26 11:28:00.594  INFO 25280 [UserId:Guest] [Context:] --- [main] c.s.b.controllers.BookmarkController     : Logger page 1
+2025-08-26 11:28:00.843  INFO 25280 [UserId:Guest] [Context:] --- [main] c.s.b.controllers.BookmarkController     : Logger page 2
+2025-08-26 11:28:00.878  INFO 25280 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-26 11:28:00.880  INFO 25280 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-26 11:28:00.888  INFO 25280 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-26 11:28:01.132  INFO 25280 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-26 11:28:01.139  INFO 25280 [UserId:Guest] [Context:] --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-26 11:28:01.142  INFO 25280 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-26 11:28:01.143  INFO 25280 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-08-26 11:28:01.151  INFO 25280 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-08-26 11:35:49.689  INFO 24752 [UserId:Guest] [Context:] --- [main] c.s.bookmarks.BookmarksApplicationTests  : Starting BookmarksApplicationTests using Java 23.0.2 with PID 24752 (started by munis in C:\Users\munis\Downloads\bookmarks2)
+2025-08-26 11:35:49.691  INFO 24752 [UserId:Guest] [Context:] --- [main] c.s.bookmarks.BookmarksApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-08-26 11:35:50.560  INFO 24752 [UserId:Guest] [Context:] --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-26 11:35:50.626  INFO 24752 [UserId:Guest] [Context:] --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2025-08-26 11:35:51.092  INFO 24752 [UserId:Guest] [Context:] --- [main] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+2025-08-26 11:35:51.101  INFO 24752 [UserId:Guest] [Context:] --- [main] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-08-26 11:35:51.163  INFO 24752 [UserId:Guest] [Context:] --- [main] org.testcontainers.DockerClientFactory   : Testcontainers version: 1.21.3
+2025-08-26 11:35:51.392  INFO 24752 [UserId:Guest] [Context:] --- [main] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-08-26 11:35:51.642  INFO 24752 [UserId:Guest] [Context:] --- [main] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2025-08-26 11:35:51.643  INFO 24752 [UserId:Guest] [Context:] --- [main] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2025-08-26 11:35:51.662  INFO 24752 [UserId:Guest] [Context:] --- [main] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 27.3.1
+  API Version: 1.47
+  Operating System: Docker Desktop
+  Total Memory: 15823 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+2025-08-26 11:35:51.689  INFO 24752 [UserId:Guest] [Context:] --- [main] tc.testcontainers/ryuk:0.12.0            : Creating container for image: testcontainers/ryuk:0.12.0
+2025-08-26 11:35:51.927  INFO 24752 [UserId:Guest] [Context:] --- [main] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 is starting: fa0667211161c11b4a629c6f94987217493c44a70ebac4207efb3eaf5ad5eba2
+2025-08-26 11:35:52.299  INFO 24752 [UserId:Guest] [Context:] --- [main] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 started in PT0.6091316S
+2025-08-26 11:35:52.306  INFO 24752 [UserId:Guest] [Context:] --- [main] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-08-26 11:35:52.307  INFO 24752 [UserId:Guest] [Context:] --- [main] org.testcontainers.DockerClientFactory   : Checking the system...
+2025-08-26 11:35:52.308  INFO 24752 [UserId:Guest] [Context:] --- [main] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2025-08-26 11:35:52.308  INFO 24752 [UserId:Guest] [Context:] --- [main] tc.postgres:latest                       : Creating container for image: postgres:latest
+2025-08-26 11:35:52.410  INFO 24752 [UserId:Guest] [Context:] --- [main] tc.postgres:latest                       : Container postgres:latest is starting: c6c925bd4826e42baa988c756b1c02f9a75ad706eae3b4834e2dbe69de43a333
+2025-08-26 11:35:53.569  INFO 24752 [UserId:Guest] [Context:] --- [main] tc.postgres:latest                       : Container postgres:latest started in PT1.2606964S
+2025-08-26 11:35:53.570  INFO 24752 [UserId:Guest] [Context:] --- [main] tc.postgres:latest                       : Container is started (JDBC URL: jdbc:postgresql://localhost:21033/test?loggerLevel=OFF)
+2025-08-26 11:35:54.101  INFO 24752 [UserId:Guest] [Context:] --- [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:21033/test?loggerLevel=OFF (PostgreSQL 17.6)
+2025-08-26 11:35:54.156  INFO 24752 [UserId:Guest] [Context:] --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2025-08-26 11:35:54.163  INFO 24752 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 6 migrations (execution time 00:00.028s)
+2025-08-26 11:35:54.178  INFO 24752 [UserId:Guest] [Context:] --- [main] org.flywaydb.core.Flyway                 : All configured schemas are empty; baseline operation skipped. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended.
+2025-08-26 11:35:54.185  INFO 24752 [UserId:Guest] [Context:] --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2025-08-26 11:35:54.249  INFO 24752 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2025-08-26 11:35:54.265  INFO 24752 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - create bookmarks table"
+2025-08-26 11:35:54.312  INFO 24752 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - insert sample data"
+2025-08-26 11:35:54.336  INFO 24752 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - create tables"
+2025-08-26 11:35:54.364  INFO 24752 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "4 - insert sample Data"
+2025-08-26 11:35:54.389  INFO 24752 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "5 - update user password"
+2025-08-26 11:35:54.412  INFO 24752 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "6 - update user password"
+2025-08-26 11:35:54.432  INFO 24752 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 6 migrations to schema "public", now at version v6 (execution time 00:00.060s)
+2025-08-26 11:35:54.566  INFO 24752 [UserId:Guest] [Context:] --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-26 11:35:54.650  INFO 24752 [UserId:Guest] [Context:] --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-08-26 11:35:54.687  INFO 24752 [UserId:Guest] [Context:] --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-26 11:35:54.963  INFO 24752 [UserId:Guest] [Context:] --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-26 11:35:54.989  INFO 24752 [UserId:Guest] [Context:] --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-26 11:35:55.015  INFO 24752 [UserId:Guest] [Context:] --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@65f96d58
+2025-08-26 11:35:55.017  INFO 24752 [UserId:Guest] [Context:] --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-26 11:35:55.040  WARN 24752 [UserId:Guest] [Context:] --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-26 11:35:55.060  INFO 24752 [UserId:Guest] [Context:] --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-26 11:35:55.723  INFO 24752 [UserId:Guest] [Context:] --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-26 11:35:55.758  INFO 24752 [UserId:Guest] [Context:] --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-26 11:35:56.113  INFO 24752 [UserId:Guest] [Context:] --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-26 11:35:57.002  WARN 24752 [UserId:Guest] [Context:] --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-26 11:35:57.752  INFO 24752 [UserId:Guest] [Context:] --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-26 11:35:57.846  INFO 24752 [UserId:Guest] [Context:] --- [main] c.s.bookmarks.BookmarksApplicationTests  : Started BookmarksApplicationTests in 8.522 seconds (process running for 9.43)
+2025-08-26 11:35:58.455  INFO 24752 [UserId:Guest] [Context:] --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.sba.bookmarks.controllers.BookmarkControllerTest]: BookmarkControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-26 11:35:58.489  INFO 24752 [UserId:Guest] [Context:] --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.sba.bookmarks.BookmarksApplication for test class com.sba.bookmarks.controllers.BookmarkControllerTest
+2025-08-26 11:35:58.554  INFO 24752 [UserId:Guest] [Context:] --- [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-08-26 11:35:58.586  INFO 24752 [UserId:Guest] [Context:] --- [main] c.s.b.c.BookmarkControllerTest           : Starting BookmarkControllerTest using Java 23.0.2 with PID 24752 (started by munis in C:\Users\munis\Downloads\bookmarks2)
+2025-08-26 11:35:58.587  INFO 24752 [UserId:Guest] [Context:] --- [main] c.s.b.c.BookmarkControllerTest           : No active profile set, falling back to 1 default profile: "default"
+2025-08-26 11:35:58.854  INFO 24752 [UserId:Guest] [Context:] --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-26 11:35:58.864  INFO 24752 [UserId:Guest] [Context:] --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-08-26 11:35:59.131  INFO 24752 [UserId:Guest] [Context:] --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-08-26 11:35:59.145  INFO 24752 [UserId:Guest] [Context:] --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-26 11:35:59.146  INFO 24752 [UserId:Guest] [Context:] --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-08-26 11:35:59.201  INFO 24752 [UserId:Guest] [Context:] --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-08-26 11:35:59.201  INFO 24752 [UserId:Guest] [Context:] --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 613 ms
+2025-08-26 11:35:59.299  INFO 24752 [UserId:Guest] [Context:] --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-08-26 11:35:59.316  INFO 24752 [UserId:Guest] [Context:] --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@5fa851ac
+2025-08-26 11:35:59.317  INFO 24752 [UserId:Guest] [Context:] --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-08-26 11:35:59.320  INFO 24752 [UserId:Guest] [Context:] --- [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:25432/postgres (PostgreSQL 14.18)
+2025-08-26 11:35:59.355  INFO 24752 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 6 migrations (execution time 00:00.012s)
+2025-08-26 11:35:59.383  INFO 24752 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 6
+2025-08-26 11:35:59.384  INFO 24752 [UserId:Guest] [Context:] --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2025-08-26 11:35:59.406  INFO 24752 [UserId:Guest] [Context:] --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-26 11:35:59.409  INFO 24752 [UserId:Guest] [Context:] --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-26 11:35:59.416  INFO 24752 [UserId:Guest] [Context:] --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-26 11:35:59.424  WARN 24752 [UserId:Guest] [Context:] --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-26 11:35:59.427  INFO 24752 [UserId:Guest] [Context:] --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 14.18
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-26 11:35:59.451  INFO 24752 [UserId:Guest] [Context:] --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-26 11:35:59.469  INFO 24752 [UserId:Guest] [Context:] --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-26 11:35:59.509  WARN 24752 [UserId:Guest] [Context:] --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-26 11:35:59.644  INFO 24752 [UserId:Guest] [Context:] --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring TestDispatcherServlet ''
+2025-08-26 11:35:59.644  INFO 24752 [UserId:Guest] [Context:] --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-08-26 11:35:59.646  INFO 24752 [UserId:Guest] [Context:] --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-26 11:35:59.649  INFO 24752 [UserId:Guest] [Context:] --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 5 ms
+2025-08-26 11:35:59.866  INFO 24752 [UserId:Guest] [Context:] --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 21058 (http) with context path '/api'
+2025-08-26 11:35:59.872  INFO 24752 [UserId:Guest] [Context:] --- [main] c.s.b.c.BookmarkControllerTest           : Started BookmarkControllerTest in 1.318 seconds (process running for 11.457)
+2025-08-26 11:36:00.146  INFO 24752 [UserId:Guest] [Context:] --- [main] c.s.b.controllers.BookmarkController     : Logger page 1
+2025-08-26 11:36:00.366  INFO 24752 [UserId:Guest] [Context:] --- [main] c.s.b.controllers.BookmarkController     : Logger page 2
+2025-08-26 11:36:00.407  INFO 24752 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-26 11:36:00.410  INFO 24752 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-26 11:36:00.414  INFO 24752 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-26 11:36:00.670  INFO 24752 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-26 11:36:00.681  INFO 24752 [UserId:Guest] [Context:] --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-26 11:36:00.684  INFO 24752 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-26 11:36:00.685  INFO 24752 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-08-26 11:36:00.686  INFO 24752 [UserId:Guest] [Context:] --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.

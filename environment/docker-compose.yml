@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  postgres-db:
+    image: postgres:14-alpine
+    #network_mode: "host"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=postgres
+    ports:
+      - "25432:5432"
+
+  bookmark-api:
+    image: ml1113/bookmarks2-api-buildpack
+    #network_mode: "host"
+    environment:
+      - DB_PORT=5432
+      - DB_CONN=postgres-db
+    ports:
+      - "18010:8010"
+    depends_on:
+      postgres-db:
+         condition: service_started
