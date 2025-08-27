@@ -2,6 +2,12 @@
 name: Java CI with Maven
 
 on:
+  workflow_dispatch:
+    inputs:
+      my_inputs:
+        description: 'A custom description'
+        required: false
+        default: 'default_value'
   push:
     branches: [ "**" ]
   pull_request:
