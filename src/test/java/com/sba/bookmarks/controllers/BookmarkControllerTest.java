@@ -5,14 +5,18 @@ import com.sba.bookmarks.repositories.BookmarkRepository;
 
 import org.junit.jupiter.api.BeforeEach;
 
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.MediaType;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.web.servlet.MockMvc;
 
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.notNullValue;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
 import java.time.Instant;
@@ -20,8 +24,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
 import org.hamcrest.CoreMatchers;
 
 @SpringBootTest(webEnvironment= SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -79,4 +84,42 @@ class BookmarkControllerTest {
                 .andExpect(jsonPath("$.hasNext",CoreMatchers.equalTo(hasNext)))
                 .andExpect(jsonPath("$.hasPrevious", CoreMatchers.equalTo(hasPrevious)));
     }
+
+    @Test
+    void shouldCreateBookmarkSuccessfully() throws Exception {
+        this.mvc.perform(
+                post("/bookmarks")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("""
+                                {
+                                    "title":"sivaLabs Blog",
+                                    "url":"https://sivalabs.in"
+                                 }
+                                """)
+                )
+                .andExpect(status().isCreated())
+                .andExpect(jsonPath("$.id", notNullValue()))
+                .andExpect(jsonPath("$.title",is("sivaLabs Blog")))
+                .andExpect(jsonPath("$.url",is("https://sivalabs.in")));
+    }
+
+
+// Error handling library need to be add and configured
+//    @Test
+//    void shouldFailToCreateBookmarkWhenUrlIsNotProvided() throws Exception {
+//        this.mvc.perform(post("/bookmarks")
+//                .contentType(MediaType.APPLICATION_JSON)
+//                .content("""
+//                        {
+//                            "title": "Sivalabs Blog"
+//                        }
+//                        """)
+//        )
+//                .andExpect(status().isBadRequest())
+//                .andExpect(header().string("Content-type", is("application/problem+json")))
+//                .andExpect(jsonPath("$.type",is("https://zalando.github.io/problem/constraint-violation")))
+//                .andExpect(jsonPath("$.title",is("Constraint Violation")))
+//                .andExpect(jsonPath("$.status", is(400)))
+//                .andReturn();
+//    }
 }

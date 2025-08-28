@@ -4,6 +4,7 @@ import com.sba.bookmarks.entities.Bookmark;
 import com.sba.bookmarks.models.BookmarkDto;
 import com.sba.bookmarks.models.BookmarkMapper;
 import com.sba.bookmarks.models.BookmarksDto;
+import com.sba.bookmarks.models.createBookmarkRequest;
 import com.sba.bookmarks.repositories.BookmarkRepository;
 
 import lombok.RequiredArgsConstructor;
@@ -14,6 +15,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.Instant;
 import java.util.List;
 
 @Service
@@ -40,6 +42,7 @@ public class BookmarksService {
         return new BookmarksDto(bookmarkPage);
    }
 
+   @Transactional(readOnly = true)
     public BookmarksDto searchBookmarks(Integer page, String query) {
         int pageNo = page < 1 ? 0 : page-1 ;
         Pageable pageable = PageRequest.of(pageNo, 10, Sort.Direction.DESC,"createdAt");
@@ -48,5 +51,13 @@ public class BookmarksService {
         Page<BookmarkDto> bookmarkPage= bookmarkRepository.findByTitleContainsIgnoreCase(query, pageable);
 
         return new BookmarksDto(bookmarkPage);
+    }
+
+    public BookmarkDto createBookmark(createBookmarkRequest request) {
+        Bookmark bookmark = new Bookmark(null,request.getTitle(),
+                                        request.getUrl(), Instant.now());
+        Bookmark savedBookmark= bookmarkRepository.save(bookmark);
+
+        return bookmarkMapper.toDto(savedBookmark);
     }
 }
