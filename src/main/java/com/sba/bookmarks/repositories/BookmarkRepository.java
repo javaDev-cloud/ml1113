@@ -14,7 +14,13 @@ public interface BookmarkRepository extends JpaRepository<Bookmark,Long> {
     @Query("select new com.sba.bookmarks.models.BookmarkDto(b.id, b.title, b.url, b.createdAt) from Bookmark b")
    Page<BookmarkDto> findBookmarks(Pageable pageable);
 
-    //   Page<Bookmark> getBookmarks(Pageable pageable);
+    @Query("""
+            select new com.sba.bookmarks.models.BookmarkDto(b.id, b.title, b.url, b.createdAt) from Bookmark b
+            where lower(b.title) like lower(concat('%',:query,'%'))
+            """)
+    Page<BookmarkDto> searchBookmarks(String query, Pageable pageable);
+
+    Page<BookmarkDto> findByTitleContainsIgnoreCase(String query, Pageable pageable);
 
 
 }

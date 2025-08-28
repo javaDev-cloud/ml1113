@@ -39,4 +39,14 @@ public class BookmarksService {
 
         return new BookmarksDto(bookmarkPage);
    }
+
+    public BookmarksDto searchBookmarks(Integer page, String query) {
+        int pageNo = page < 1 ? 0 : page-1 ;
+        Pageable pageable = PageRequest.of(pageNo, 10, Sort.Direction.DESC,"createdAt");
+
+      // Page<BookmarkDto> bookmarkPage= bookmarkRepository.searchBookmarks(query, pageable);
+        Page<BookmarkDto> bookmarkPage= bookmarkRepository.findByTitleContainsIgnoreCase(query, pageable);
+
+        return new BookmarksDto(bookmarkPage);
+    }
 }

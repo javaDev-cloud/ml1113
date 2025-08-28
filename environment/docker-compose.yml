@@ -10,14 +10,14 @@ services:
     ports:
       - "25432:5432"
 
-  bookmark-api:
-    image: ml1113/bookmarks2-api-buildpack
-    #network_mode: "host"
-    environment:
-      - DB_PORT=5432
-      - DB_CONN=postgres-db
-    ports:
-      - "28010:8010"
-    depends_on:
-      postgres-db:
-         condition: service_started
+#  bookmark-api:
+#    image: ml1113/bookmarks2-api-buildpack
+#    #network_mode: "host"
+#    environment:
+#      - DB_PORT=5432
+#      - DB_CONN=postgres-db
+#    ports:
+#      - "28010:8010"
+#    depends_on:
+#      postgres-db:
+#         condition: service_started
